@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Compare Internet Providers in Your Area in 2 Minutes | Go Broadband</title>
-<meta name="description" content="Compare every internet & TV provider in your area in about 2 minutes and find a plan that saves you money. Free, no obligation. Enter your ZIP to start with Go Broadband.">
+<meta name="description" content="Compare every internet & TV provider available at your address in about 2 minutes and find a plan that saves you money. Free, no obligation — see live plans and prices with Go Broadband.">
 <link rel="canonical" href="https://www.goadvertising.io/broadband.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Compare Internet Providers in Your Area in 2 Minutes | Go Broadband">
-<meta property="og:description" content="Compare all providers in your area and save. Free, no obligation. Enter your ZIP to start.">
+<meta property="og:description" content="Compare all providers available at your address and save. Free, no obligation.">
 <meta property="og:url" content="https://www.goadvertising.io/broadband.html">
 <link rel="icon" type="image/png" href="assets/GO_square.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,9 +37,8 @@
   <div>
     <span class="eyebrow">Go Broadband · Internet &amp; TV</span>
     <h1>Compare <span class="grad">every provider</span> in your area in 2 minutes</h1>
-    <p class="lead">Stop overpaying. See the internet &amp; TV plans actually available at your address, side by side, and find one that saves you money. Free, no obligation — just start with your ZIP code.</p>
-    <!-- Routes the ZIP into the Go Broadband comparison widget. Confirm the exact widget URL + ZIP parameter so it pre-fills. -->
-    <form class="zipform" id="compare" method="GET" action="https://www.gobroadband.io/">
+    <p class="lead">Stop overpaying. See the internet &amp; TV plans actually available at your address, side by side, and find one that saves you money. Free, no obligation — start with your ZIP code.</p>
+    <form class="zipform" onsubmit="event.preventDefault();document.getElementById('compare').scrollIntoView({behavior:'smooth'});">
       <input name="zip" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Enter your ZIP code" required aria-label="ZIP code">
       <button class="btn btn-accent" type="submit">Compare plans →</button>
     </form>
@@ -76,24 +75,26 @@
     <div class="step"><div><h4>Compare plans &amp; prices</h4><p>See providers, speeds, and pricing side by side in one place.</p></div></div>
     <div class="step"><div><h4>Pick your plan &amp; save</h4><p>Choose the plan that fits and get connected — on your terms.</p></div></div>
   </div>
-  <div class="center" style="margin-top:34px"><a class="btn btn-accent" href="#compare">Compare providers in my area →</a></div>
 </div></section>
 
-<section class="section"><div class="wrap center">
-  <div class="stat-row">
-    <div class="stat"><div class="n">All</div><div class="l">major providers in your area</div></div>
-    <div class="stat"><div class="n">~2 min</div><div class="l">to compare side by side</div></div>
-    <div class="stat"><div class="n">$0</div><div class="l">free, no obligation</div></div>
-  </div>
+<!-- ===== Live comparison widget (AllConnect / Chameleon, powered by myFinance) ===== -->
+<section class="section" id="compare"><div class="wrap">
+  <div class="center" style="margin-bottom:30px"><span class="eyebrow">Compare now</span><h2 style="font-size:clamp(1.8rem,4vw,2.4rem)">Internet plans available at your address</h2><p class="lead center">Confirm or edit your location in the tool below to see live providers, speeds, and prices.</p></div>
+  <!-- NOTE: data-ad-id/data-campaign below are AllConnect DEMO values (redirect only).
+       Replace with your GO Broadband / AllConnect ad-id + campaign so revenue & tracking attribute to you.
+       sub-ids are free-form tracking tags. -->
+  <div class="myFinance-widget"
+       data-ad-id="de8c74a6-a94c-4094-b72e-6962c90693e8"
+       data-campaign="chameleon-demos"
+       data-sub-id="goadvertising"
+       data-sub-id2="broadband"
+       data-sub-id3="landing"></div>
 </div></section>
 
 <section class="section band"><div class="wrap cta-band">
   <h2>Ready to see what's available?</h2>
-  <p class="lead center" style="margin-bottom:22px">Enter your ZIP and compare every provider in your area in about two minutes.</p>
-  <form class="zipform" method="GET" action="https://www.gobroadband.io/" style="margin:0 auto">
-    <input name="zip" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Enter your ZIP code" required aria-label="ZIP code">
-    <button class="btn btn-accent" type="submit">Compare plans →</button>
-  </form>
+  <p class="lead center" style="margin-bottom:22px">Compare every provider available at your address in about two minutes.</p>
+  <a class="btn btn-accent" href="#compare">Compare plans now →</a>
 </div></section>
 
 <footer><div class="wrap">
@@ -105,8 +106,11 @@
     <div><h4>Services</h4><div class="foot-links"><a href="lifeline.html">Free Phone Service</a><a href="broadband.html">Internet &amp; TV Deals</a><a href="blog/index.html">The GO Blog</a></div></div>
     <div><h4>Company</h4><div class="foot-links"><a href="index.html#start">Get Started</a><a href="terms.html">Terms &amp; Conditions</a><a href="privacy.html">Privacy Policy</a></div></div>
   </div>
-  <div class="disclaimer">Go Advertising is a marketing firm that helps you compare third-party internet and TV providers through Go Broadband. Provider names are shown for comparison purposes and are the property of their respective owners. Plan availability, pricing, and promotions vary by address and are set by the providers.</div>
+  <div class="disclaimer">Go Advertising is a marketing firm that helps you compare third-party internet and TV providers through Go Broadband (powered by AllConnect). Provider names are shown for comparison purposes and are the property of their respective owners. Plan availability, pricing, and promotions vary by address and are set by the providers.</div>
   <div class="foot-bottom"><span>© 2026 GO Advertising. All rights reserved.</span><span>848 Brickell Ave, Suite 1010, Miami, FL 33131</span></div>
 </div></footer>
+
+<!-- AllConnect / Chameleon widget loader -->
+<script async src="https://static.myfinance.com/embed/myFinance.js"></script>
 </body>
 </html>
