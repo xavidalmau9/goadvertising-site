@@ -17,8 +17,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"How does Go Broadband work?","acceptedAnswer":{"@type":"Answer","text":"Enter your ZIP code and we show you the internet and TV providers available at your address so you can compare plans, speeds, and prices in one place — in about two minutes. Comparing is free with no obligation."}},
-{"@type":"Question","name":"Is it free to compare?","acceptedAnswer":{"@type":"Answer","text":"Yes. Comparing providers and plans through Go Broadband is completely free, with no obligation to sign up."}},
-{"@type":"Question","name":"Which providers can I compare?","acceptedAnswer":{"@type":"Answer","text":"Go Broadband helps you compare the major internet and TV providers that serve your specific address, so you can find the best available plan and price."}}
+{"@type":"Question","name":"Is it free to compare?","acceptedAnswer":{"@type":"Answer","text":"Yes. Comparing providers and plans through Go Broadband is completely free, with no obligation to sign up."}}
 ]}
 </script>
 </head>
@@ -26,30 +25,29 @@
 <header class="nav"><div class="wrap nav-inner">
   <a class="logo" href="index.html"><img class="logo-img" src="assets/go_advertising_rectangular_no_background.png" alt="GO Advertising"></a>
   <nav class="nav-links" id="navlinks">
-    <a href="lifeline.html">Free Phone Service</a><a href="broadband.html">Internet &amp; TV</a>
-    <a href="blog/index.html">The GO Blog</a><a href="index.html#start">Get Started</a>
-    <a class="btn btn-primary" href="#compare" style="padding:10px 20px">Compare Now</a>
+    <a href="lifeline.html">Free Phone Service</a><a href="broadband.html#compare">Internet &amp; TV</a>
+    <a href="blog/index.html">The GO Blog</a>
+    <a class="btn btn-primary" href="#compare" style="padding:10px 20px">Compare Plans →</a>
   </nav>
   <button class="nav-toggle" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
 </div></header>
 
-<section class="hero"><div class="wrap">
-  <div>
+<!-- Short hero, then the live widget immediately below -->
+<section class="section tight" id="compare"><div class="wrap">
+  <div class="center" style="margin-bottom:26px">
     <span class="eyebrow">Go Broadband · Internet &amp; TV</span>
-    <h1>Compare <span class="grad">every provider</span> in your area in 2 minutes</h1>
-    <p class="lead">Stop overpaying. See the internet &amp; TV plans actually available at your address, side by side, and find one that saves you money. Free, no obligation — start with your ZIP code.</p>
-    <form class="zipform" onsubmit="event.preventDefault();document.getElementById('compare').scrollIntoView({behavior:'smooth'});">
-      <input name="zip" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="Enter your ZIP code" required aria-label="ZIP code">
-      <button class="btn btn-accent" type="submit">Compare plans →</button>
-    </form>
-    <p class="zipnote">✓ Free &nbsp; ✓ No obligation &nbsp; ✓ Takes about 2 minutes</p>
+    <h1 style="font-size:clamp(2rem,4.5vw,2.9rem)">Compare every provider in your area in 2 minutes</h1>
+    <p class="lead center">See the internet &amp; TV plans available at your address, side by side. Free, no obligation — confirm your location below to start.</p>
   </div>
-  <div class="hero-art">
-    <div class="big">2 min</div>
-    <div class="row"><span class="dot"></span> All major providers in one place</div>
-    <div class="row"><span class="dot"></span> Compare speeds &amp; prices side by side</div>
-    <div class="row"><span class="dot"></span> Free — no obligation to switch</div>
-  </div>
+  <!-- AllConnect / Chameleon widget (powered by myFinance). Auto-detects ZIP; editable location.
+       NOTE: data-ad-id/data-campaign are AllConnect DEMO values (redirect only).
+       Replace with your Go Broadband / AllConnect ad-id + campaign so revenue & tracking attribute to you. -->
+  <div class="myFinance-widget"
+       data-ad-id="de8c74a6-a94c-4094-b72e-6962c90693e8"
+       data-campaign="chameleon-demos"
+       data-sub-id="goadvertising"
+       data-sub-id2="broadband"
+       data-sub-id3="landing"></div>
 </div></section>
 
 <section class="section tight band"><div class="wrap center">
@@ -60,41 +58,13 @@
 </div></section>
 
 <section class="section"><div class="wrap">
-  <div class="center" style="margin-bottom:46px"><span class="eyebrow">Why compare</span><h2 style="font-size:clamp(1.8rem,4vw,2.4rem)">A smarter way to shop for internet</h2></div>
+  <div class="center" style="margin-bottom:40px"><span class="eyebrow">Why compare</span><h2 style="font-size:clamp(1.8rem,4vw,2.4rem)">A smarter way to shop for internet</h2></div>
   <div class="grid-3">
     <div class="card"><div class="ico blue">🔎</div><h3>See every option</h3><p>One search shows the providers and plans actually available at your address — no guessing, no calling around.</p></div>
     <div class="card"><div class="ico green">💸</div><h3>Save money</h3><p>Comparing side by side helps you spot a faster plan, a lower price, or a promo you'd otherwise miss.</p></div>
     <div class="card"><div class="ico blue">🤝</div><h3>No pressure</h3><p>It's free and there's no obligation. Compare now, decide on your own time.</p></div>
   </div>
-</div></section>
-
-<section class="section band"><div class="wrap">
-  <div class="center" style="margin-bottom:10px"><span class="eyebrow">How it works</span><h2 style="font-size:clamp(1.8rem,4vw,2.4rem)">Three steps, about two minutes</h2></div>
-  <div class="steps">
-    <div class="step"><div><h4>Enter your ZIP code</h4><p>That's the only thing we need to find what's available at your address.</p></div></div>
-    <div class="step"><div><h4>Compare plans &amp; prices</h4><p>See providers, speeds, and pricing side by side in one place.</p></div></div>
-    <div class="step"><div><h4>Pick your plan &amp; save</h4><p>Choose the plan that fits and get connected — on your terms.</p></div></div>
-  </div>
-</div></section>
-
-<!-- ===== Live comparison widget (AllConnect / Chameleon, powered by myFinance) ===== -->
-<section class="section" id="compare"><div class="wrap">
-  <div class="center" style="margin-bottom:30px"><span class="eyebrow">Compare now</span><h2 style="font-size:clamp(1.8rem,4vw,2.4rem)">Internet plans available at your address</h2><p class="lead center">Confirm or edit your location in the tool below to see live providers, speeds, and prices.</p></div>
-  <!-- NOTE: data-ad-id/data-campaign below are AllConnect DEMO values (redirect only).
-       Replace with your GO Broadband / AllConnect ad-id + campaign so revenue & tracking attribute to you.
-       sub-ids are free-form tracking tags. -->
-  <div class="myFinance-widget"
-       data-ad-id="de8c74a6-a94c-4094-b72e-6962c90693e8"
-       data-campaign="chameleon-demos"
-       data-sub-id="goadvertising"
-       data-sub-id2="broadband"
-       data-sub-id3="landing"></div>
-</div></section>
-
-<section class="section band"><div class="wrap cta-band">
-  <h2>Ready to see what's available?</h2>
-  <p class="lead center" style="margin-bottom:22px">Compare every provider available at your address in about two minutes.</p>
-  <a class="btn btn-accent" href="#compare">Compare plans now →</a>
+  <div class="center" style="margin-top:34px"><a class="btn btn-accent" href="#compare">Compare providers now →</a></div>
 </div></section>
 
 <footer><div class="wrap">
@@ -103,14 +73,13 @@
       <p style="max-width:34ch">Finding easy solutions to complicated problems.</p>
       <p style="margin:10px 0 0;line-height:1.5">848 Brickell Ave, Suite 1010<br>Miami, FL 33131</p>
       <div class="socials"><a href="https://facebook.com/goadvertising">f</a><a href="https://instagram.com/goadvertising.io">IG</a><a href="https://www.linkedin.com/company/goadvertising">in</a><a href="https://tiktok.com/@easysolutionsusa">TT</a><a href="https://x.com/goadvertising9">X</a></div></div>
-    <div><h4>Services</h4><div class="foot-links"><a href="lifeline.html">Free Phone Service</a><a href="broadband.html">Internet &amp; TV Deals</a><a href="blog/index.html">The GO Blog</a></div></div>
-    <div><h4>Company</h4><div class="foot-links"><a href="index.html#start">Get Started</a><a href="terms.html">Terms &amp; Conditions</a><a href="privacy.html">Privacy Policy</a></div></div>
+    <div><h4>Free Phone Service</h4><div class="foot-links"><a href="https://www.assurancewireless.com/partner/BGOA">Apply now</a><a href="lifeline.html">Eligibility &amp; details</a></div></div>
+    <div><h4>Internet &amp; TV</h4><div class="foot-links"><a href="#compare">Compare plans</a><a href="blog/index.html">The GO Blog</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a></div></div>
   </div>
   <div class="disclaimer">Go Advertising is a marketing firm that helps you compare third-party internet and TV providers through Go Broadband (powered by AllConnect). Provider names are shown for comparison purposes and are the property of their respective owners. Plan availability, pricing, and promotions vary by address and are set by the providers.</div>
   <div class="foot-bottom"><span>© 2026 GO Advertising. All rights reserved.</span><span>848 Brickell Ave, Suite 1010, Miami, FL 33131</span></div>
 </div></footer>
 
-<!-- AllConnect / Chameleon widget loader -->
 <script async src="https://static.myfinance.com/embed/myFinance.js"></script>
 </body>
 </html>
