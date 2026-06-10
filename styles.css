@@ -147,3 +147,16 @@ footer a:hover{color:#fff}
 .logo-img{height:34px;width:auto;display:block}
 footer .foot-logo{height:30px;width:auto;filter:brightness(0) invert(1);margin-bottom:14px}
 @media(max-width:860px){.logo-img{height:28px}}
+
+/* broadband landing — zip entry + trust */
+.zipform{display:flex;gap:10px;max-width:470px;margin-top:6px}
+.zipform input{flex:1;padding:15px 18px;border:1.5px solid var(--line);border-radius:12px;font-size:1.05rem;font-family:inherit}
+.zipform input:focus{outline:none;border-color:var(--brand)}
+.zipnote{font-size:.85rem;color:var(--muted);margin-top:10px}
+.providers{display:flex;flex-wrap:wrap;gap:14px 28px;justify-content:center;align-items:center;margin-top:8px}
+.providers span{font-family:'Poppins';font-weight:700;font-size:1.2rem;color:#9aa3b2;letter-spacing:-.01em}
+.stat-row{display:flex;gap:40px;flex-wrap:wrap;justify-content:center;margin-top:8px}
+.stat{text-align:center}
+.stat .n{font-family:'Poppins';font-weight:800;font-size:2.2rem;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .l{color:var(--muted);font-size:.95rem}
+@media(max-width:560px){.zipform{flex-direction:column}}
