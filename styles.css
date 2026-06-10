@@ -141,3 +141,9 @@ footer a:hover{color:#fff}
   .nav-toggle{display:block}
   .section{padding:60px 0}
 }
+
+/* brand logo images */
+.logo{display:inline-flex;align-items:center;gap:0}
+.logo-img{height:34px;width:auto;display:block}
+footer .foot-logo{height:30px;width:auto;filter:brightness(0) invert(1);margin-bottom:14px}
+@media(max-width:860px){.logo-img{height:28px}}
