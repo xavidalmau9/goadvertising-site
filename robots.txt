@@ -21,4 +21,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://www.goadvertising.io/sitemap.xml
+Sitemap: https://goadvertising.io/sitemap.xml
