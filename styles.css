@@ -146,9 +146,13 @@ footer a:hover{color:#fff}
 
 /* brand logo images */
 .logo{display:inline-flex;align-items:center;gap:0}
+.logo picture,footer picture{display:block;line-height:0}
 .logo-img{height:56px;width:auto;display:block}
 footer .foot-logo{height:34px;width:auto;filter:brightness(0) invert(1);margin-bottom:14px}
 @media(max-width:860px){.logo-img{height:44px}}
+.guide-links{max-width:760px;margin:28px auto 0;display:grid;gap:12px;list-style:none;padding:0}
+.guide-links a{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;font-weight:600;color:var(--ink)}
+.guide-links a:hover{text-decoration:none;border-color:var(--brand)}
 
 /* broadband landing — zip entry + trust */
 .zipform{display:flex;gap:10px;max-width:470px;margin-top:6px}
